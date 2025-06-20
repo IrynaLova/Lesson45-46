@@ -14,7 +14,6 @@ public class PasswordValidatorTest {
         validator = new PasswordValidator();
     }
 
-
     @Test
     void testValidPassword(){
         assertTrue(validator.isStrong("Qwerty0!"));
@@ -22,6 +21,7 @@ public class PasswordValidatorTest {
         assertTrue(validator.isStrong("Qwerty0@"));
         assertTrue(validator.isStrong("Qwerty0#"));
     }
+
     @Test
     void testSymbolsLessThan8(){
         assertFalse(validator.isStrong("Qwert0!"));
@@ -34,7 +34,6 @@ public class PasswordValidatorTest {
         assertFalse(validator.isStrong("Qwerty0 "));
         assertFalse(validator.isStrong("Qwe^ty0"));
         assertFalse(validator.isStrong("~Qwerty0"));
-
     }
 
     @Test

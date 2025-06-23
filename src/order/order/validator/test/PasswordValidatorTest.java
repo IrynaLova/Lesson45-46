@@ -1,8 +1,8 @@
-package validator.test;
+package order.order.validator.test;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import validator.util.PasswordValidator;
+import order.order.validator.util.PasswordValidator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -52,4 +52,5 @@ public class PasswordValidatorTest {
     void testNull() {
         assertFalse(validator.isStrong(null));
     }
+
 }

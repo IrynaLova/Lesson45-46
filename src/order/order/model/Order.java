@@ -1,4 +1,4 @@
-package model.order;
+package order.order.model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -7,6 +7,12 @@ public class Order {
     private String dish;
     private double price;
     private LocalDateTime time;
+
+    public Order(String dish, double price, LocalDateTime time) {
+        this.dish = dish;
+        this.price = price;
+        this.time = time;
+    }
 
     public String getDish() {
         return dish;
@@ -52,4 +58,5 @@ public class Order {
         return Objects.hash(dish, price, time);
     }
 }
+
 
